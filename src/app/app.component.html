@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">
+    <img src="https://image.shutterstock.com/image-illustration/logo-your-lorem-ipsum-company-260nw-478252837.jpg" alt="Logo" style="width:80px; height: 30px;">
+  </a>
+</nav>
+
+
+<h1 class="display-4 text-info text-center">Displaying the JSON data  </h1>
+<div class="jumbotron container" style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+  <div class="card" id="x" *ngFor="let data of TotalData">
+   <div class="card-body overflow-auto ">
+        <h4 class="card-title text-info">Title:{{data.data.title}}</h4>
+        <h4 class="card-title text-warning">SelfText_HTML:{{data.data.selftext}}</h4>
+        <h4 class="card-title text-warning">url:{{data.data.url}}</h4>
+        <h4 class="card-title text-warning">Score:{{data.data.hide_score}}</h4>
+      </div>
+    </div>
+  </div>
+
